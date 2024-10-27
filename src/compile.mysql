@@ -1,0 +1,59 @@
+gcc xpresso_accueil.c -o xpresso_accueil.cgi -lmysqlclient
+cp xpresso_accueil.cgi /usr/lib/cgi-bin/
+gcc xpresso_checktotp.c -o xpresso_checktotp.cgi -lmysqlclient
+cp xpresso_checktotp.cgi /usr/lib/cgi-bin/
+gcc xpresso_dashboard.c -o xpresso_dashboard.cgi -lmysqlclient
+cp xpresso_dashboard.cgi /usr/lib/cgi-bin/
+gcc xpresso_articles.c -o xpresso_articles.cgi -lmysqlclient
+cp xpresso_articles.cgi /usr/lib/cgi-bin/
+gcc xpresso_article_ajouter.c -o xpresso_article_ajouter.cgi -lmysqlclient
+cp xpresso_article_ajouter.cgi /usr/lib/cgi-bin/
+gcc xpresso_savearticle.c -o xpresso_savearticle.cgi -lmysqlclient
+cp xpresso_savearticle.cgi /usr/lib/cgi-bin/
+gcc xpresso_lire_article.c -o xpresso_lire_article.cgi -lmysqlclient
+cp xpresso_lire_article.cgi /usr/lib/cgi-bin/
+gcc xpresso_commenter.c -o xpresso_commenter.cgi -lmysqlclient
+cp xpresso_commenter.cgi /usr/lib/cgi-bin/
+gcc xpresso_commentaires.c -o xpresso_commentaires.cgi -lmysqlclient
+cp xpresso_commentaires.cgi /usr/lib/cgi-bin/
+gcc xpresso_article_modifier.c -o xpresso_article_modifier.cgi -lmysqlclient
+cp xpresso_article_modifier.cgi /usr/lib/cgi-bin/
+gcc xpresso_article_supprimer.c -o xpresso_article_supprimer.cgi -lmysqlclient
+cp xpresso_article_supprimer.cgi /usr/lib/cgi-bin/
+gcc xpresso_commentaire_valider.c -o xpresso_commentaire_valider.cgi -lmysqlclient
+cp xpresso_commentaire_valider.cgi /usr/lib/cgi-bin/
+gcc xpresso_commentaire_supprimer.c -o xpresso_commentaire_supprimer.cgi -lmysqlclient
+cp xpresso_commentaire_supprimer.cgi /usr/lib/cgi-bin/
+gcc xpresso_categories.c -o xpresso_categories.cgi -lmysqlclient
+cp xpresso_categories.cgi /usr/lib/cgi-bin/
+gcc xpresso_categorie_supprimer.c -o xpresso_categorie_supprimer.cgi -lmysqlclient
+cp xpresso_categorie_supprimer.cgi /usr/lib/cgi-bin/
+gcc xpresso_categorie_ajouter.c -o xpresso_categorie_ajouter.cgi -lmysqlclient
+cp xpresso_categorie_ajouter.cgi /usr/lib/cgi-bin/
+gcc xpresso_savecategorie.c -o xpresso_savecategorie.cgi -lmysqlclient
+cp xpresso_savecategorie.cgi /usr/lib/cgi-bin/
+gcc xpresso_auteurs.c -o xpresso_auteurs.cgi -lmysqlclient
+cp xpresso_auteurs.cgi /usr/lib/cgi-bin/
+gcc xpresso_auteur_ajouter.c -o xpresso_auteur_ajouter.cgi -lmysqlclient
+cp xpresso_auteur_ajouter.cgi /usr/lib/cgi-bin/
+gcc xpresso_saveauteur.c -o xpresso_saveauteur.cgi -lmysqlclient
+cp xpresso_saveauteur.cgi /usr/lib/cgi-bin/
+gcc xpresso_editprofile.c -o xpresso_editprofile.cgi -lmysqlclient
+cp xpresso_editprofile.cgi /usr/lib/cgi-bin/
+gcc xpresso_confirmactivetotp.c -o xpresso_confirmactivetotp.cgi -lmysqlclient
+cp xpresso_confirmactivetotp.cgi /usr/lib/cgi-bin/
+gcc xpresso_activetotp.c -o xpresso_activetotp.cgi -lmysqlclient
+cp xpresso_activetotp.cgi /usr/lib/cgi-bin/
+gcc xpresso_confirmdesactivetotp.c -o xpresso_confirmdesactivetotp.cgi -lmysqlclient
+cp xpresso_confirmdesactivetotp.cgi /usr/lib/cgi-bin/
+gcc xpresso_desactivetotp.c -o xpresso_desactivetotp.cgi -lmysqlclient
+cp xpresso_desactivetotp.cgi /usr/lib/cgi-bin/
+gcc xpresso_updateprofile.c -o xpresso_updateprofile.cgi -lmysqlclient
+cp xpresso_updateprofile.cgi /usr/lib/cgi-bin/
+gcc xpresso_param.c -o xpresso_param.cgi -lmysqlclient
+cp xpresso_param.cgi /usr/lib/cgi-bin/
+gcc xpresso_updateparam.c -o xpresso_updateparam.cgi -lmysqlclient
+cp xpresso_updateparam.cgi /usr/lib/cgi-bin/
+gcc xpresso_rss.c -o xpresso_rss.cgi -lmysqlclient
+cp xpresso_rss.cgi /usr/lib/cgi-bin/
+rm *.cgi

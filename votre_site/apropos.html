@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Titre de votre site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="/xpresso/votre_site/votre_icone.png">
+<link rel="stylesheet" href="/xpresso/votre_site/themes/press.min.css" />
+<link rel="stylesheet" href="/xpresso/votre_site/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+   <div data-role="page" data-theme="b">
+      <div data-role="header" data-position="fixed" data-theme="b">
+         <div data-role="navbar">
+            <ul>
+               <li>
+                  <form action="/cgi-bin/xpresso_accueil.cgi?site=votre_site" method="get" id="form-home" data-transition="none" data-rel="dialog">
+                  <button type="submit" data-mini="false" data-inline="false" data-theme="d" data-icon="home" class="ui-shadow">Accueil</button>
+                  </form>
+               </li>
+            </ul>
+         </div>
+         <h1>Votre site</h1>
+      </div>
+      <div role="main" class="ui-content" data-theme="b">
+            Votre texte
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b">
+         <h4>(C) Votre site</h4>
+      </div>
+   </div>
+</body>
+</html>

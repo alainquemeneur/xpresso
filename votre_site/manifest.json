@@ -1,0 +1,15 @@
+{
+    "short_name": "Votre site",
+    "name": "Votre site",
+    "icons": [
+        {
+            "src": "/votre_site/manifest.png",
+            "type": "image/png",
+            "sizes": "330x330"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#000000"
+}

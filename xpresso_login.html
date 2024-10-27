@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>XPressO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<link rel="icon" type="image/x-icon" href="/xpresso/mini.png">
+<link rel="stylesheet" href="/xpresso/themes/press.min.css" />
+<link rel="stylesheet" href="/xpresso/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="/jq/jquery.mobile.structure-1.4.5.min.css" />
+<script src="/jq/demos/js/jquery.min.js"></script>
+<script src="/jq/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+   <div data-role="page" data-theme="b">
+      <div data-role="header" data-position="fixed" data-theme="b">
+         
+         <h1>XPressO</h1>
+      </div>
+      <div role="main" class="ui-content" data-theme="b">
+         <p align=center><img src="/xpresso/XPressO.png"></p>
+               <form autocomplete="off" action="/cgi-bin/xpresso_checktotp.cgi" method="post" id="form-dashboard" data-transition="none" data-rel="dialog">
+                  <input type="hidden" name="txt-site" id="txt-site" value="Site">
+                  <div data-role="fieldcontain">
+                     <label for="txt-login">Login :</label>
+                     <input type="text" name="txt-login" id="txt-login" value="">
+                  </div>
+                  <div data-role="fieldcontain">
+                     <label for="txt-mdp">Mot de passe :</label>
+                     <input type="password" name="txt-mdp" id="txt-mdp" value="">
+                  </div>
+                  <div data-role="fieldcontain">
+                     <label for="txt-site">Site :</label>
+                     <input type="text" name="txt-site" id="txt-site" value="">
+                  </div>
+            <button type="submit" data-mini="false" data-inline="false" data-theme="c" data-icon="action">Entrer</button>
+         </form>
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b">
+         <h4>(C) XPresso</h4>
+      </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+CREATE TABLE site (titrecomplet text, titrecourt text, urlaccueil text, urlfavicon text, urlapropos text, urlrss text, urlpubaccueil text, linkpubaccueil text, urlpubarticle text, linkpubarticle text, nombrecommaccueil integer, nombreartaccueil integer, copyright text, chemintheme text);
+CREATE UNIQUE INDEX sitex on site (titrecourt(100));
+CREATE TABLE auteur (pseudo text,mdp text,site text,actif text,totpsecret text,totpcode text);
+CREATE UNIQUE INDEX auteurx ON auteur (pseudo(100),site(100));
+INSERT INTO auteur values ('Admin','admin','','oui','','');
+CREATE TABLE article (site text, titre text, jour integer, mois integer, annee integer, heure integer, minute integer, urlmiseenavant text, contenu text, auteur text, id integer);
+CREATE UNIQUE INDEX articlex ON article (site(100), id);
+CREATE TABLE categorieallouee (categorie text, site text, article integer);
+CREATE UNIQUE INDEX categoriealloueex ON categorieallouee(categorie(100),site(100),article);
+CREATE TABLE categorie (nomlong text, nomcourt text, site text);
+CREATE UNIQUE INDEX categoriex ON categorie (nomcourt(100),site(100));
+CREATE TABLE commentaire (site text, article integer,pseudo text, email text, urlavatar text, horodatage text, contenu text, valide text);
+CREATE TABLE vue (site text, article integer, jour integer, mois integer, annee integer, adresseip text);

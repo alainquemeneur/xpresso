@@ -1,0 +1,1 @@
+/usr/bin/curl -d "Commentaire reçu sur votre site" https://ntfy.sh/votre_adresse_ntfy
