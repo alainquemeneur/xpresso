@@ -34,13 +34,14 @@ Désormais votre webapp est accessible à l'URL : https://votre_serveur/xpresso
 Il faut maintenant préparer la base de données MySQL :
 cd /home/votre_repertoire/xpresso/build
 mysql -u root -p mysql
->create database xpresso;
->create user 'xpresso'@'localhost' identified by 'votre_mot_de_passe';
->grant all privileges on xpresso.* to 'xpresso'@'localhost';
->quit
+create database xpresso;
+create user 'xpresso'@'localhost' identified by 'votre_mot_de_passe';
+grant all privileges on xpresso.* to 'xpresso'@'localhost';
+quit
+
 mysql -u xpresso -p xpresso
->source ./install_mysql_tables.sql;
->quit
+source ./install_mysql_tables.sql;
+quit
 
 Avant de compiler les scripts CGI, il faut leur indiquer le mot de passe choisi pour l'utilisateur xpresso dans MySQL ainsi que l'URL du serveur sur Internet:
 cd /home/votre_repertoire/xpresso/src
@@ -76,9 +77,9 @@ Le fichier /home/votre_repertoire/xpresso/monblog/index.html contient une redire
 
 Il faut ensuite déclarer le site dans la base MySQL, ainsi qu'au moins 1 auteur sur ce site (chaque site aura ses propres auteurs) :
 mysql -u xpresso -p xpresso
->insert into site values ('Mon site','monsite','/cgi-bin/xpresso_accueil.cgi?site=monblog','/xpresso/monblog/monblog.png','/xpresso/monblog/apropos.html','','','','','',5,7,'(C) Mon blog 2024','/xpresso/monblog/themes');
->insert into auteur values ('Mon pseudo','mon_mot_de_passe','monblog','oui','','');
->quit
+insert into site values ('Mon site','monsite','/cgi-bin/xpresso_accueil.cgi?site=monblog','/xpresso/monblog/monblog.png','/xpresso/monblog/apropos.html','','','','','',5,7,'(C) Mon blog 2024','/xpresso/monblog/themes');
+insert into auteur values ('Mon pseudo','mon_mot_de_passe','monblog','oui','','');
+quit
 
 Ceci n'est à faire qu'une seule fois pour chaque site créé
 
