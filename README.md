@@ -3,17 +3,11 @@ CMS multi-sites auto-hébergé
 
 XPresso est un CMS (Content Management System), c'est à dire un équivalent simple de Wordpress, permettant d'auto-héberger plusieurs sites web sur un même serveur NginX, et prévu pour afficher les sites principalement sur smartphones.
 
-Le résultat final qu'on peut obtenir avec peut être visualisé sur les deux exemples ci-dessous, hébergés sur le même serveur :
-<a href="https://xpresso.ddns.net/valerian">https://xpresso.ddns.net/valerian</a>
-<a href="https://xpresso.ddns.net/alainquemeneur">https://xpresso.ddns.net/alainquemeneur</a>
-
 J'ai programmé ce logiciel pour répondre à mes besoins.
 
 Techniquement, il s'agit d'une webapp installable n'importe quel OS (Windows, Linux, Mac, iOS, Android), mais prévue pour fonctionner surtout sous iOS ou Android. Le front end est programmé en HTML 5 + toolkit javascript JQuery Mobile. Le back end est constitué de scripts CGI écrits en langage C, traitant les données en interface avec une base de données MySQL ou MariaDB.
 
 La webapp est constituée de 2 parties distinctes : le moteur de gestion des sites, et les sites auto-hébergés eux-mêmes qu'on rajoute ensuite par dessus.
-
-Le moteur de gestion ressemble à ceci : <a href="https://xpresso.ddns.net/xpresso/xpresso_login.html">https://xpresso.ddns.net/xpresso/xpresso_login.html</a> (compte d'accès requis)
 
 <strong><u>Installation</u></strong>
 
