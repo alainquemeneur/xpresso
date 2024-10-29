@@ -31,6 +31,9 @@ sudo tar -zxvf ./jq.tgz
 
 Désormais votre webapp est accessible à l'URL : https://votre_serveur/xpresso
 
+Installez qrencode pour être en mesure de générer les QR codes nécessaires pour le 2FA Google Authenticator:
+sudo apt-get install qrencode
+
 Il faut maintenant préparer la base de données MySQL :
 cd /home/votre_repertoire/xpresso/build
 mysql -u root -p mysql
