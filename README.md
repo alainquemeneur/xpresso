@@ -46,6 +46,7 @@ Renseigner le mot de passe MySQL que vous avez choisi dans password.h
 Renseigner l'URL de votre serveur sur Internet dans specific.c
 
 Il faut maintenant compiler les scripts CGI :
+sudo apt install libmysqlclient-dev
 cd /home/votre_repertoire/xpresso/src
 sudo mkdir /usr/lib/cg-bin
 chmod a+x compile*
@@ -92,3 +93,5 @@ Vous pouvez être prévenu par une notification sur votre téléphone Android d�
 /usr/bin/curl -d "Commentaire reçu sur votre site monblog" https://ntfy.sh/votre_adresse_ntfy
 
 Mettez ce que vous voulez dans /home/votre_repertoire/xpresso/monblog/apropos.html pour vous présenter
+
+alain.quemeneur@gmail.com
