@@ -61,6 +61,8 @@ rm * (vérifiez bien d'être dans le bon répertoire avant de taper cela !!!)
 
 Voilà, le produit est installé et paramétré. Reste à y déclarer des sites webs
 
+Mais avant tout, connectez vous avec le login Admin et le mot de passe admin, puis changez le mot de passe admin depuis l'interface web
+
 <strong><u>Créer un site web (blog)</u></strong>
 
 Pour créer un site (on peut en créer autant qu'on en veut sur le même serveur), par exemple "monblog" il faut d'abord lui créer un répertoire d'accueil :
@@ -75,7 +77,7 @@ Le fichier /home/votre_repertoire/xpresso/monblog/index.html contient une redire
 
 Il faut ensuite déclarer le site dans la base MySQL, ainsi qu'au moins 1 auteur sur ce site (chaque site aura ses propres auteurs) :
 mysql -u xpresso -p xpresso
-insert into site values ('Mon site','monsite','/cgi-bin/xpresso_accueil.cgi?site=monblog','/xpresso/monblog/monblog.png','/xpresso/monblog/apropos.html','','','','','',5,7,'(C) Mon blog 2024','/xpresso/monblog/themes');
+insert into site values ('Mon site','monsite','/cgi-bin/xpresso_accueil.cgi?site=monblog','/xpresso/monblog/monblog.png','/xpresso/monblog/apropos.html','/cgi-bin/xpresso_rss.cgi?site=monblog','','','','',5,7,'(C) Mon blog 2024','/xpresso/monblog/themes');
 insert into auteur values ('Mon pseudo','mon_mot_de_passe','monblog','oui','','');
 quit
 
